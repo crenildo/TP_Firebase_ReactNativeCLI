@@ -286,7 +286,7 @@ Vou **dar sequência lógica**, sem pular nada e sem misturar Expo com CLI.
 
 ---
 
-# 🔹 PASSO 3 — Criar o APP no Firebase (base técnica)
+# 🔹 PASSO 4 — Criar o APP no Firebase (base técnica)
 
 👉 **Objetivo deste passo:**
 Registrar o **app React Native CLI** no Firebase para que ele possa:
@@ -301,7 +301,7 @@ Isso é equivalente a “dar identidade” ao app dentro do projeto Firebase.
 
 ---
 
-## 3️⃣.1 — Acessar configuração do projeto
+## 4.1 — Acessar configuração do projeto
 
 1. Acesse:
    👉 [https://console.firebase.google.com](https://console.firebase.google.com)
@@ -312,7 +312,7 @@ Isso é equivalente a “dar identidade” ao app dentro do projeto Firebase.
 
 ---
 
-## 3️⃣.2 — Escolher a plataforma correta
+## 4.2 — Escolher a plataforma correta
 
 Na parte inferior da página você verá três ícones:
 
@@ -334,7 +334,7 @@ Na parte inferior da página você verá três ícones:
 
 ---
 
-## 3️⃣.3 — Preencher dados do App Android
+## 4.3 — Preencher dados do App Android
 
 ### 🔹 Nome do pacote (Application ID)
 
@@ -371,7 +371,7 @@ com.crenildo.tpfirebasecli
 
 ---
 
-## 3️⃣.4 — Baixar google-services.json
+## 4.4 — Baixar google-services.json
 
 Após preencher os dados:
 
@@ -395,7 +395,7 @@ google-services.json
 ---
 
 
-## 3️⃣.5 — Adicionar o SDK do Firebase ao projeto React Native CLI (Android)
+## 4.5 — Adicionar o SDK do Firebase ao projeto React Native CLI (Android)
 
 👉 **Objetivo deste passo:**
 Conectar o **projeto Android local** ao Firebase usando o SDK oficial.
@@ -408,7 +408,7 @@ Conectar o **projeto Android local** ao Firebase usando o SDK oficial.
 
 ---
 
-### 3️⃣.5.1 — Escolher o tipo de Gradle
+### 4.5.1 — Escolher o tipo de Gradle
 
 O Firebase oferece duas opções:
 
@@ -427,7 +427,7 @@ O Firebase oferece duas opções:
 
 ---
 
-### 3️⃣.5.2 — Colocar o google-services.json no lugar correto
+### 4.5.2 — Colocar o google-services.json no lugar correto
 
 Copie o arquivo baixado para:
 
@@ -451,7 +451,7 @@ TPFirebaseCLI/
 
 ---
 
-### 3️⃣.5.3 — Configurar o Gradle (nível de projeto)
+### 4.5.3 — Configurar o Gradle (nível de projeto)
 
 Abra o arquivo:
 
@@ -473,7 +473,7 @@ buildscript {
 
 ---
 
-### 3️⃣.5.4 — Configurar o Gradle (nível do app)
+### 4.5.4 — Configurar o Gradle (nível do app)
 
 Abra o arquivo:
 
@@ -494,7 +494,7 @@ apply plugin: 'com.google.gms.google-services'
 
 ---
 
-### 3️⃣.5.5 — Sincronizar e validar
+### 4.5.5 — Sincronizar e validar
 
 Agora execute:
 
@@ -502,8 +502,32 @@ Agora execute:
 cd android
 ./gradlew clean
 cd ..
+npx react-native doctor
+
+// Agora iremos iniciar o METRO:
+
+npx react-native start
+
+//Após inicializar o metro, mantenha ele aberto, e abra uma janela novo de terminal e execute:
+
 npx react-native run-android
 ```
+
+observação: caso dê algum erro na inicialização, rode o comando:
+
+npx react-native start --reset-cache
+
+Mais uma dica muito importante:
+
+🔥 Por que isso é importante (Quase ninguém explica)
+
+Se der erro de JS → olha o Metro
+
+Se der erro de build → olha o Gradle
+
+Se der erro de bridge → olha o adb / porta 8081
+
+Você sabe onde está o problema, não fica no escuro.
 
 Se tudo estiver correto:
 
@@ -511,23 +535,12 @@ Se tudo estiver correto:
 * Nenhum erro de Firebase aparece
 * Mesmo sem usar Auth ainda
 
----
-
-## ✅ Resultado do PASSO 3.5 (corrigido)
-
-✔ Projeto CLI já existente
-✔ Firebase conectado ao Android
-✔ google-services.json aplicado
-✔ Gradle configurado corretamente
-
-👉 **Ainda não usamos Auth, Firestore ou Storage**
-👉 Apenas base técnica pronta (como deve ser)
 
 ---
 
 ## 📌 Próximo passo lógico
 
-### 🔹 PASSO 4 — Instalar Firebase JS SDK (lado JavaScript)
+### 🔹 PASSO 5 — Instalar Firebase JS SDK (lado JavaScript)
 
 Agora sim vamos:
 

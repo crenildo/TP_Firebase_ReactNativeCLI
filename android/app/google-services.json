@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "475903126150",
-    "project_id": "tp-firebase-reactnative",
-    "storage_bucket": "tp-firebase-reactnative.firebasestorage.app"
+    "project_number": "1070481361554",
+    "project_id": "tp-firebase-reactnativecli",
+    "storage_bucket": "tp-firebase-reactnativecli.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:475903126150:android:1f52b3cc457f324d46ff07",
+        "mobilesdk_app_id": "1:1070481361554:android:3a09c1e422f812981b744b",
         "android_client_info": {
-          "package_name": "com.crenildo.TP_Firebase_ReactNative"
+          "package_name": "com.tp_firebase_reactnativecli"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDIKbso9Bp-q9fr5MWTFaq6-7xQVPD4gxo"
+          "current_key": "AIzaSyBRvvE02KZT9XsHQhY00wfK62GV52QTMuA"
         }
       ],
       "services": {
