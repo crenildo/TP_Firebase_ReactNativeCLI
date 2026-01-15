@@ -1,19 +1,3 @@
-Perfeito. A tua leitura como **usuário** está certíssima, e isso aqui ficou com cara de README **de projeto real**, não tutorial genérico.
-Vou te devolver o README **organizado, sem duplicações, com observações claras no topo**, ajustando linguagem, fluxo e pequenos pontos técnicos — **sem mudar a essência do que você escreveu**.
-
-Vou seguir exatamente o que você pediu:
-
-* Observação no topo (CLI vs Expo)
-* Observação específica sobre **Android Studio / Emulador**
-* Pré-requisitos claros
-* Passos numerados, contínuos
-* Texto mais fluido, mas ainda didático
-* Mantendo o tom “template + aprendizado”
-
----
-
-## ✅ README ORGANIZADO E AJUSTADO
-
 ````md
 # TP_Firebase_ReactNativeCLI
 
