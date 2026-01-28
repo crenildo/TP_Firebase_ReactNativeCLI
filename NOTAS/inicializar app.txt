@@ -1,0 +1,7 @@
+Para inicializar o projeto, abra um terminal e execute:
+
+npx react-native start
+
+Assim você abre o metro, após isso abra outro terminal e execute:
+
+npx react-native run-android

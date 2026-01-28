@@ -12,6 +12,8 @@ import {
   useSafeAreaInsets,
 } from 'react-native-safe-area-context';
 
+import { HelloWorldApp } from './android/app/src/screens/HelloWorldApp';
+
 function App() {
   const isDarkMode = useColorScheme() === 'dark';
 
@@ -19,6 +21,7 @@ function App() {
     <SafeAreaProvider>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
       <AppContent />
+      {/*<HelloWorldApp/>*/}
     </SafeAreaProvider>
   );
 }
